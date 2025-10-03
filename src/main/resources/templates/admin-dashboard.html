@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        .low-stock { background-color: #ffcccc; }   /* Red for low stock */
+        .near-expiry { background-color: #fff0b3; } /* Yellow for near expiry */
+    </style>
+</head>
+<body>
+    <h2>Admin Dashboard</h2>
+
+    <!-- Search Form -->
+    <form method="get" th:action="@{/admin/dashboard}">
+        <input type="text" name="search" placeholder="Search medicine by name"/>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Add New Medicine -->
+    <a th:href="@{/admin/add}">Add New Medicine</a>
+
+    <!-- Medicine Table -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Expiry Date</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="med : ${medicines}"
+            th:classappend="${med.lowStock} ? 'low-stock' : (${med.nearExpiry} ? 'near-expiry' : '')">
+            <td th:text="${med.name}"></td>
+            <td th:text="${med.quantity}"></td>
+            <td th:text="${med.price}"></td>
+            <td th:text="${med.expiryDate}"></td>
+            <td>
+                <a th:href="@{/admin/edit/{id}(id=${med.id})}">Edit</a> |
+                <a th:href="@{/admin/delete/{id}(id=${med.id})}">Delete</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

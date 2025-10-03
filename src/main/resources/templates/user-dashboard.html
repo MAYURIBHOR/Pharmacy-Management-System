@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h2>User Dashboard</h2>
+
+    <!-- Search Form -->
+    <form method="get" th:action="@{/user/dashboard}">
+        <input type="text" name="search" placeholder="Search medicine by name"/>
+        <button type="submit">Search</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Expiry Date</th>
+            <th>Sell</th>
+        </tr>
+        <tr th:each="med : ${medicines}">
+            <td th:text="${med.name}"></td>
+            <td th:text="${med.quantity}"></td>
+            <td th:text="${med.price}"></td>
+            <td th:text="${med.expiryDate}"></td>
+            <td>
+                <form th:action="@{/user/sell/{id}(id=${med.id})}" method="post">
+                    <input type="number" name="quantity" min="1" max="100" required/>
+                    <button type="submit">Sell</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
