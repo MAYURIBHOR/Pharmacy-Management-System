@@ -13,6 +13,7 @@ public class SupplierService {
     @Autowired
     private SupplierRepository supplierRepository;
 
+    @SuppressWarnings("null")
     public Supplier saveSupplier(Supplier supplier) {
         return supplierRepository.save(supplier);
     }
@@ -26,6 +27,7 @@ public class SupplierService {
      * Renamed to the common utility name 'getSupplier' for cleaner service use.
      * It performs the same logic as the old getSupplierById.
      */
+    @SuppressWarnings("null")
     public Supplier getSupplier(Long id) {
         return supplierRepository.findById(id).orElse(null);
     }
@@ -35,6 +37,7 @@ public class SupplierService {
         return getSupplier(id);
     }
 
+    @SuppressWarnings("null")
     public void deleteSupplier(Long id) {
         supplierRepository.deleteById(id);
     }

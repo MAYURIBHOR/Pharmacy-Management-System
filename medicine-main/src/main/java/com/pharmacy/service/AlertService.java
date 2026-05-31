@@ -20,6 +20,7 @@ public class AlertService {
     private AlertRepository alertRepository;
 
     // Save alert
+    @SuppressWarnings("null")
     public Alert saveAlert(Alert alert) {
         return alertRepository.save(alert);
     }
@@ -69,6 +70,7 @@ public class AlertService {
                 .medicine(medicine)
                 .build();
 
-        alertRepository.save(alert);
+        @SuppressWarnings("null")
+        var temp = alertRepository.save(alert);
     }
 }

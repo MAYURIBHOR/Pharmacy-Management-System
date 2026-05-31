@@ -1,7 +1,6 @@
 package com.pharmacy.controller;
 
 import com.pharmacy.model.Medicine;
-import com.pharmacy.service.AlertService;
 import com.pharmacy.service.MedicineService;
 import com.pharmacy.service.SupplierService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +14,6 @@ public class MedicineController {
 
     @Autowired
     private MedicineService medicineService;
-
-    @Autowired
-    private AlertService alertService;
 
     @Autowired
     private SupplierService supplierService;

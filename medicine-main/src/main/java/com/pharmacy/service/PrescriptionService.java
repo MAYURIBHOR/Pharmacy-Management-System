@@ -13,6 +13,7 @@ public class PrescriptionService {
     private PrescriptionRepository prescriptionRepository;
 
     // Save or update a prescription
+    @SuppressWarnings("null")
     public Prescription savePrescription(Prescription prescription) {
         return prescriptionRepository.save(prescription);
     }
@@ -23,11 +24,13 @@ public class PrescriptionService {
     }
 
     // Get a single prescription by ID
+    @SuppressWarnings("null")
     public Prescription getPrescription(Long id) {
         return prescriptionRepository.findById(id).orElse(null);
     }
 
     // Delete a prescription by ID
+    @SuppressWarnings("null")
     public void deletePrescription(Long id) {
         prescriptionRepository.deleteById(id);
     }

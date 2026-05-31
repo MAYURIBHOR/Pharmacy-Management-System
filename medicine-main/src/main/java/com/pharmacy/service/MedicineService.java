@@ -17,6 +17,7 @@ public class MedicineService {
     @Autowired
     private AlertService alertService;
 
+    @SuppressWarnings("null")
     public Medicine saveMedicine(Medicine medicine) {
         Medicine savedMedicine = medicineRepository.save(medicine);
         alertService.checkAndGenerateAlert(savedMedicine);
@@ -27,10 +28,12 @@ public class MedicineService {
         return medicineRepository.findAll();
     }
 
+    @SuppressWarnings("null")
     public Medicine getMedicineById(Long id) {
         return medicineRepository.findById(id).orElse(null);
     }
 
+    @SuppressWarnings("null")
     public void deleteMedicine(Long id) {
         medicineRepository.deleteById(id);
     }

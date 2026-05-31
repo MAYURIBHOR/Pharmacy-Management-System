@@ -18,6 +18,7 @@ public class CustomerService {
     /**
      * Saves a new customer or updates an existing one.
      */
+    @SuppressWarnings("null")
     public Customer saveCustomer(Customer customer) {
         return customerRepository.save(customer);
     }
@@ -32,6 +33,7 @@ public class CustomerService {
     /**
      * Retrieves a single customer by their ID.
      */
+    @SuppressWarnings("null")
     public Customer getCustomer(Long id) {
         // FindById returns an Optional, use .orElse(null) for convenience
         return customerRepository.findById(id).orElse(null);
@@ -41,6 +43,7 @@ public class CustomerService {
      * FIX: Adds the missing delete method required by the CustomerController.
      * Delegates the delete operation to the JpaRepository.
      */
+    @SuppressWarnings("null")
     public void deleteCustomer(Long id) {
         customerRepository.deleteById(id);
     }
