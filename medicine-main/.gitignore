@@ -1,0 +1,5 @@
+target/
+*.db
+*.trace.db
+.idea/
+.vscode/

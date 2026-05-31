@@ -1,0 +1,399 @@
+2026-05-31T14:30:01.209Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-31T14:30:01.213Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: claude-haiku-4.5, input: {
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "event": "precheckCompleted",
+  "phase": "precheck",
+  "status": "succeeded",
+  "details": {
+    "components": [
+      {
+        "name": "jdk",
+        "baseVersion": "17",
+        "targetVersion": "21"
+      },
+      {
+        "name": "spring-boot",
+        "baseVersion": "3.5.7",
+        "targetVersion": "3.5.x"
+      }
+    ]
+  }
+}}).
+2026-05-31T14:30:01.214Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:30:01.218Z [INFO] Project c:\Users\Mayuri\Downloads\medicine-main\medicine-main is a maven project, try to get java version from pom.xml
+2026-05-31T14:30:01.229Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'precheckCompleted' reported!\nSession ID: 20260531143001,\nSession Dir: c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main\\.github\\modernize\\java-upgrade\\20260531143001"
+}}).
+2026-05-31T14:30:01.229Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-31T14:30:01.233Z [INFO] Project java version: 17
+2026-05-31T14:30:01.234Z [INFO] Maven project detected.
+2026-05-31T14:30:01.235Z [INFO] Build tool type: mvn
+2026-05-31T14:30:01.565Z [INFO] JDK: undefined
+2026-05-31T14:30:01.566Z [ERROR] Failed to detect or resolve JDK for the project at c:\Users\Mayuri\Downloads\medicine-main\medicine-main.
+2026-05-31T14:30:01.567Z [WARN] [ReportEventTool] Full project info unavailable, attempting lightweight fallback: UserError: Failed to detect or resolve JDK for the project at c:\Users\Mayuri\Downloads\medicine-main\medicine-main. Please ensure JDK 17 is installed and properly configured on the machine.
+2026-05-31T14:30:01.571Z [INFO] Maven project detected.
+2026-05-31T14:30:01.572Z [INFO] Project c:\Users\Mayuri\Downloads\medicine-main\medicine-main is a maven project, try to get java version from pom.xml
+2026-05-31T14:30:06.091Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-31T14:30:06.092Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:30:06.093Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:30:06.093Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-31T14:30:06.094Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-31T14:30:06.208Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-31T14:30:06.210Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: claude-haiku-4.5, input: {
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:30:06.210Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:30:06.214Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planGenerationStarted' reported!\nSession ID: 20260531143001,\nSession Dir: c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main\\.github\\modernize\\java-upgrade\\20260531143001"
+}}).
+2026-05-31T14:30:06.215Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-31T14:30:06.235Z [INFO] ---------------------prepare appmod-list-jdks----------------------
+2026-05-31T14:30:06.236Z [INFO] [Tool.prepareInvocation]({name: appmod-list-jdks, input: {
+  "sessionId": "20260531143001"
+}}).
+2026-05-31T14:30:06.237Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:30:06.240Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2026-05-31T14:30:06.242Z [INFO] ----------------------prepared appmod-list-jdks----------------------
+2026-05-31T14:30:06.366Z [INFO] ----------------------invoke appmod-list-jdks----------------------
+2026-05-31T14:30:06.367Z [INFO] [Tool.invoke]({name: appmod-list-jdks, modelId: claude-haiku-4.5, input: {
+  "sessionId": "20260531143001"
+}}).
+2026-05-31T14:30:06.369Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:30:06.417Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 25.0.1\n   📁 Path: C:\\Program Files\\Java\\jdk-25\\bin\n   🏷️ Source: others\n\nTotal: 1 JDK installation(s) found"
+}}).
+2026-05-31T14:30:06.418Z [INFO] ----------------------invoked appmod-list-jdks----------------------
+2026-05-31T14:30:06.452Z [INFO] ---------------------prepare appmod-list-mavens----------------------
+2026-05-31T14:30:06.453Z [INFO] [Tool.prepareInvocation]({name: appmod-list-mavens, input: {
+  "sessionId": "20260531143001",
+  "includeVersion": true
+}}).
+2026-05-31T14:30:06.455Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:30:06.461Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-05-31T14:30:06.462Z [INFO] ----------------------prepared appmod-list-mavens----------------------
+2026-05-31T14:30:06.567Z [INFO] ----------------------invoke appmod-list-mavens----------------------
+2026-05-31T14:30:06.568Z [INFO] [Tool.invoke]({name: appmod-list-mavens, modelId: claude-haiku-4.5, input: {
+  "sessionId": "20260531143001",
+  "includeVersion": true
+}}).
+2026-05-31T14:30:06.570Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:30:10.092Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following maven installations in your system:\n\n1. Maven 3.9.12\n   📁 Path: C:\\Program Files\\apache-maven-3.9.12\\bin\n   🏷️ Source: PATH\n\nTotal: 1 Maven installation(s) found"
+}}).
+2026-05-31T14:30:10.093Z [INFO] ----------------------invoked appmod-list-mavens----------------------
+2026-05-31T14:31:09.808Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-31T14:31:09.809Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:31:09.810Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:31:09.813Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-31T14:31:09.814Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-31T14:31:09.937Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-31T14:31:09.940Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: claude-haiku-4.5, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:31:09.941Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:31:09.944Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planReviewed' reported!\nSession ID: 20260531143001,\nSession Dir: c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main\\.github\\modernize\\java-upgrade\\20260531143001"
+}}).
+2026-05-31T14:31:09.945Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-31T14:31:17.801Z [INFO] ---------------------prepare appmod-confirm-upgrade-plan----------------------
+2026-05-31T14:31:17.802Z [INFO] [Tool.prepareInvocation]({name: appmod-confirm-upgrade-plan, input: {
+  "sessionId": "20260531143001"
+}}).
+2026-05-31T14:31:17.802Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:31:17.805Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Review [upgrade plan](file:///c:/Users/Mayuri/Downloads/medicine-main/medicine-main/.github/modernize/java-upgrade/20260531143001/plan.md)",
+  "confirmationMessages": {
+    "title": "Plan generated",
+    "message": "Please review the generated plan and make any necessary adjustments before proceeding. You can modify the generated [`plan.md`](file:///c:/Users/Mayuri/Downloads/medicine-main/medicine-main/.github/modernize/java-upgrade/20260531143001/plan.md) directly."
+  }
+}}).
+2026-05-31T14:31:17.806Z [INFO] ----------------------prepared appmod-confirm-upgrade-plan----------------------
+2026-05-31T14:31:19.998Z [INFO] ----------------------invoke appmod-confirm-upgrade-plan----------------------
+2026-05-31T14:31:19.999Z [INFO] [Tool.invoke]({name: appmod-confirm-upgrade-plan, modelId: claude-haiku-4.5, input: {
+  "sessionId": "20260531143001"
+}}).
+2026-05-31T14:31:20.000Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:31:20.001Z [INFO] Upgrade plan confirmed successfully.
+2026-05-31T14:31:20.001Z [INFO] [Tool.invoke]({result: {
+  "message": "Generated plan is reviewed and confirmed by the user! the upgrade process will start now."
+}}).
+2026-05-31T14:31:20.002Z [INFO] ----------------------invoked appmod-confirm-upgrade-plan----------------------
+2026-05-31T14:31:27.565Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-31T14:31:27.565Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:31:27.566Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:31:27.567Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-31T14:31:27.567Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-31T14:31:27.667Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-31T14:31:27.668Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: claude-haiku-4.5, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:31:27.669Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:31:27.872Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planExecutionStarted' reported!\nSession ID: 20260531143001,\nSession Dir: c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main\\.github\\modernize\\java-upgrade\\20260531143001"
+}}).
+2026-05-31T14:31:27.873Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-31T14:31:39.633Z [INFO] ---------------------prepare appmod-install-jdk----------------------
+2026-05-31T14:31:39.634Z [INFO] [Tool.prepareInvocation]({name: appmod-install-jdk, input: {
+  "sessionId": "20260531143001",
+  "version": "21"
+}}).
+2026-05-31T14:31:39.635Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:31:42.766Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install JDK"
+}}).
+2026-05-31T14:31:42.767Z [INFO] ----------------------prepared appmod-install-jdk----------------------
+2026-05-31T14:31:42.912Z [INFO] ----------------------invoke appmod-install-jdk----------------------
+2026-05-31T14:31:42.914Z [INFO] [Tool.invoke]({name: appmod-install-jdk, modelId: claude-haiku-4.5, input: {
+  "sessionId": "20260531143001",
+  "version": "21"
+}}).
+2026-05-31T14:31:42.917Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:36:44.809Z [INFO] [Tool.invoke]({result: {
+  "result": {
+    "name": "java",
+    "path": "C:\\Users\\Mayuri\\AppData\\Local\\jdks\\jdk-21.0.10\\bin",
+    "version": "21.0.10"
+  },
+  "message": "JDK 21 is installed at C:\\Users\\Mayuri\\AppData\\Local\\jdks\\jdk-21.0.10\\bin",
+  "telemetry": {
+    "tool": "JDK",
+    "version": "21"
+  }
+}}).
+2026-05-31T14:36:44.810Z [INFO] ----------------------invoked appmod-install-jdk----------------------
+2026-05-31T14:36:51.051Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-31T14:36:51.052Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "details": {
+    "buildToolPath": "C:\\Program Files\\apache-maven-3.9.12\\bin\\mvn.bat",
+    "jdkPath": "C:\\Users\\Mayuri\\AppData\\Local\\jdks\\jdk-21.0.10\\bin"
+  },
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:36:51.053Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:36:51.054Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-31T14:36:51.055Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-31T14:36:51.163Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-31T14:36:51.163Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: claude-haiku-4.5, input: {
+  "details": {
+    "buildToolPath": "C:\\Program Files\\apache-maven-3.9.12\\bin\\mvn.bat",
+    "jdkPath": "C:\\Users\\Mayuri\\AppData\\Local\\jdks\\jdk-21.0.10\\bin"
+  },
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:36:51.165Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:36:51.169Z [INFO] Project c:\Users\Mayuri\Downloads\medicine-main\medicine-main is a maven project, try to get java version from pom.xml
+2026-05-31T14:36:51.171Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentSetup' reported!\nSession ID: 20260531143001,\nSession Dir: c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main\\.github\\modernize\\java-upgrade\\20260531143001"
+}}).
+2026-05-31T14:36:51.172Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-31T14:36:51.175Z [INFO] Project java version: 17
+2026-05-31T14:36:51.178Z [INFO] Maven project detected.
+2026-05-31T14:36:51.179Z [INFO] Build tool type: mvn
+2026-05-31T14:36:51.181Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Users\\Mayuri\\AppData\\Local\\jdks\\jdk-21.0.10\\bin",
+  "version": "17"
+}
+2026-05-31T14:36:51.182Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Program Files\\apache-maven-3.9.12\\bin\\mvn.bat\\bin",
+  "version": ""
+}
+2026-05-31T14:36:51.183Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Program Files\\apache-maven-3.9.12\\bin\\mvn.bat\\bin",
+    "name": "mvn",
+    "version": ""
+  },
+  "jdk": {
+    "path": "C:\\Users\\Mayuri\\AppData\\Local\\jdks\\jdk-21.0.10\\bin",
+    "name": "java",
+    "version": "17"
+  },
+  "name": "medicine-main",
+  "dir": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main"
+}
+2026-05-31T14:36:55.802Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-31T14:36:55.803Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "details": {},
+  "event": "baselineSetup",
+  "message": "Java 17 JDK not available on system; baseline compilation and tests skipped. Proceeding directly to upgrade steps.",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "skipped"
+}}).
+2026-05-31T14:36:55.803Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:36:55.804Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-31T14:36:55.805Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-31T14:36:55.891Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-31T14:36:55.892Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: claude-haiku-4.5, input: {
+  "details": {},
+  "event": "baselineSetup",
+  "message": "Java 17 JDK not available on system; baseline compilation and tests skipped. Proceeding directly to upgrade steps.",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "skipped"
+}}).
+2026-05-31T14:36:55.893Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:36:55.894Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'baselineSetup' reported!\nSession ID: 20260531143001,\nSession Dir: c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main\\.github\\modernize\\java-upgrade\\20260531143001"
+}}).
+2026-05-31T14:36:55.895Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-31T14:36:59.894Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-31T14:36:59.896Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "details": {
+    "stepNumber": 3,
+    "stepTitle": "Update Java Version to 21"
+  },
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:36:59.897Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:36:59.898Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-31T14:36:59.899Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-31T14:37:00.004Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-31T14:37:00.005Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: claude-haiku-4.5, input: {
+  "details": {
+    "stepNumber": 3,
+    "stepTitle": "Update Java Version to 21"
+  },
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:37:00.006Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:37:00.008Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepStarted' reported!\nSession ID: 20260531143001,\nSession Dir: c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main\\.github\\modernize\\java-upgrade\\20260531143001"
+}}).
+2026-05-31T14:37:00.009Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-31T14:45:14.124Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-31T14:45:14.127Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "details": {
+    "commitId": "76238516a4d8d3cb0ce4456ecaef6f103423cac7",
+    "stepNumber": 3,
+    "stepTitle": "Update Java Version to 21"
+  },
+  "event": "upgradeStepCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:45:14.129Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:45:14.132Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-31T14:45:14.132Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-31T14:45:14.255Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-31T14:45:14.256Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: claude-haiku-4.5, input: {
+  "details": {
+    "commitId": "76238516a4d8d3cb0ce4456ecaef6f103423cac7",
+    "stepNumber": 3,
+    "stepTitle": "Update Java Version to 21"
+  },
+  "event": "upgradeStepCompleted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:45:14.256Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:45:14.259Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepCompleted' reported!\nSession ID: 20260531143001,\nSession Dir: c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main\\.github\\modernize\\java-upgrade\\20260531143001"
+}}).
+2026-05-31T14:45:14.259Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-05-31T14:45:18.663Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-05-31T14:45:18.664Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "details": {
+    "stepNumber": 4,
+    "stepTitle": "Final Validation"
+  },
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:45:18.665Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-05-31T14:45:18.666Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-05-31T14:45:18.667Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-05-31T14:45:18.749Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-05-31T14:45:18.750Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: claude-haiku-4.5, input: {
+  "details": {
+    "stepNumber": 4,
+    "stepTitle": "Final Validation"
+  },
+  "event": "upgradeStepStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main",
+  "sessionId": "20260531143001",
+  "status": "succeeded"
+}}).
+2026-05-31T14:45:18.750Z [INFO] [Tool.invoke] do invoke.
+2026-05-31T14:45:18.752Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepStarted' reported!\nSession ID: 20260531143001,\nSession Dir: c:\\Users\\Mayuri\\Downloads\\medicine-main\\medicine-main\\.github\\modernize\\java-upgrade\\20260531143001"
+}}).
+2026-05-31T14:45:18.752Z [INFO] ----------------------invoked appmod-report-event----------------------
